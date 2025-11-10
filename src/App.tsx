@@ -1,13 +1,26 @@
-import './App.css';
+import type { JSX } from 'react';
+import './App';
 
-function App() {
+function Sidebar(): JSX.Element {
+  return (
+    <div className='bg-red flex-[0_1_250px]'>p</div>
+  )
+}
+
+function Content(): JSX.Element {
+  return (
+    <section className='bg-blue flex-1'>x</section>
+  )
+}
+
+function App(): JSX.Element {
 
   return (
     <>
-      <header className='bg-surface-800 text-white'>Perro</header>
+      <header className=''>Perro</header>
       <main className='flex'>
-        <div className='bg-red flex-[0_1_250px]'>p</div>
-        <div className='bg-blue flex-1'>x</div>
+        <Sidebar />
+        <Content />
       </main>
     </>
   )
