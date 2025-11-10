@@ -14,6 +14,10 @@ interface SidebarProps {
   onselect?: (project: Project) => void | null;
 }
 
+interface ContentProps {
+  project: Project | null;
+}
+
 function Sidebar({onselect}: SidebarProps): JSX.Element {
   const [projects] = useState<Project[]>(projects_data);
 
@@ -37,9 +41,18 @@ function Sidebar({onselect}: SidebarProps): JSX.Element {
   );
 }
 
-function Content(): JSX.Element {
+function Content({project}: ContentProps): JSX.Element {
   return (
-    <section className='bg-blue flex-1'>x</section>
+    <section className='bg-blue flex-1'>
+      {project ? (
+        <>
+          <h2>{project.name}</h2>
+          <p>{project.description}</p>
+        </>
+      ) : (
+        <p>Selecciona un proyecto</p>
+      )}
+    </section>
   )
 }
 
@@ -53,7 +66,7 @@ function App(): JSX.Element {
       <header className='text-center'>Perro</header>
       <main className='flex'>
         <Sidebar onselect={setProjectSelected}/>
-        <Content />
+        <Content project={projecSelected}/>
       </main>
     </>
   )
