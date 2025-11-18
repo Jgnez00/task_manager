@@ -2,12 +2,12 @@ export const project = [
   {
     id: 1,
     name: 'Project Alpha',
-    description: 'This is the first project.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem necessitatibus facere dolor omnis? Similique consequuntur fugit dolor vitae porro deserunt aliquid quo repudiandae eligendi facilis ratione quia ipsa, molestias dolorem!',
   },
   {
     id: 2,
     name: 'Project Beta',
-    description: 'This is the second project.',
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem necessitatibus facere dolor omnis? Similique consequuntur fugit dolor vitae porro deserunt aliquid quo repudiandae eligendi facilis ratione quia ipsa, molestias dolorem!',
   },
 ]
 
@@ -16,21 +16,24 @@ export const tasks = [
     id: 1,
     projectId: 1,
     title: 'Design the UI',
-    description: 'Loren ip su sd fe kfds',
-    completed: false,
+    num_tasks: 1,
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem necessitatibus facere dolor omnis? Similique consequuntur fugit dolor vitae porro deserunt aliquid quo repudiandae eligendi facilis ratione quia ipsa, molestias dolorem!',
+    status: 'done',
   },
   {
     id: 2,
     projectId: 1,
     title: 'Set up the database',
-    description: 'Loren ip su sd fe kfds',
-    completed: true,
+    num_tasks: 1,
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem necessitatibus facere dolor omnis? Similique consequuntur fugit dolor vitae porro deserunt aliquid quo repudiandae eligendi facilis ratione quia ipsa, molestias dolorem!',
+    status: 'in-progress',
   },
   {
-    id: 1,
+    id: 3,
     projectId: 2,
     title: 'Design the UI',
-    description: 'Loren ip su sd fe kfds',
-    completed: false,
+    num_tasks: 2,
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem necessitatibus facere dolor omnis? Similique consequuntur fugit dolor vitae porro deserunt aliquid quo repudiandae eligendi facilis ratione quia ipsa, molestias dolorem!',
+    status: 'in-progress',
   },
 ]
